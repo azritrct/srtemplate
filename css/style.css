@@ -384,6 +384,13 @@ button:focus {
 	margin-left: 20px;
   }
   
+
+  .topbar .social-links a img{
+	height: 38px;
+	border: solid 1.5px red;
+
+  }
+
   .topbar .social-links a:hover {
 	color: #fff;
   }
@@ -560,7 +567,9 @@ a.navbar-brand img {
 
 
 .icon-boxes {
-	padding-bottom: 60px;
+	margin-top: -70px;
+	padding-bottom: 30px;
+
   }
   
   @media (min-width: 1200px) {
@@ -579,8 +588,8 @@ a.navbar-brand img {
 	padding: 10px 3px;
 	position: relative;
 	overflow: hidden;
-	background: #fff;
-	box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+	background: rgb(231, 232, 240);
+	box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.8);
 	transition: all 0.3s ease-in-out;
 	border-radius: 3px;
 	z-index: 1;
@@ -589,18 +598,35 @@ a.navbar-brand img {
 	text-align: center;
   }
   
-.icon-box .title {
-	font-weight: 700;
-	margin-bottom: 15px;
-	font-size: 24px;
-  }
+
   
-.icon-box .title a {
+/* .icon-box .title a {
 	color: #212757;
 	transition: 0.3s;
-  }
+	background: #05E0D8;
+  } */
   
-.icon-box .icon {
+  .icon-box img {
+	width: 90px;
+	height: 90px;
+	align-items: center;
+	/* margin-bottom: 10px; */
+	padding-top: 10px;
+	display: inline-block;
+	transition: all 0.3s ease-in-out;
+	font-size: 48px;
+	/* line-height: 1; */
+	color: #00020a;
+  }
+
+  .icon-box h4 {
+	margin-top: 5px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	font-size: 20px;
+  }
+
+/* .icon-box .icon {
 	margin-bottom: 20px;
 	padding-top: 10px;
 	display: inline-block;
@@ -609,13 +635,14 @@ a.navbar-brand img {
 	line-height: 1;
 	color: #212757;
   }
-  
+   */
 .icon-box:hover {
 	background: #e60e0e;
+	transform: scale(1.1);
+	color: #ffff;
   }
-  
-.icon-box:hover .title a,
-.icon-box:hover .icon {
+
+.icon-box:hover h4{
 	color: #fff;
   }
   
