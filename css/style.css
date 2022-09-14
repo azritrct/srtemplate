@@ -859,6 +859,19 @@ a.navbar-brand img {
 	justify-content: center;
 }
 
+.view {
+	background: url("https://mdbootstrap.com/img/Photos/Others/img (40).webp");
+	background-size: cover;
+	
+
+}
+@media (min-width: 768px) {
+    .view {
+        overflow: visible;
+        margin-top: -56px;
+    }
+}
+
 /* .tab_menu ul li:nth-child(5),.tab_menu ul li:nth-child(7) {
     background: #002147;
     transform: skew(-30deg);
@@ -913,6 +926,7 @@ span.icon {
 span.icon img {
     height: 45px;
 }
+
 
 
 /*------------------------------------------------------------------ About -------------------------------------------------------------------*/
